@@ -17,6 +17,7 @@ libraryDependencies += "org.rudogma" %% "superquants" % "0.9"
 libraryDependencies += "org.rudogma" %%% "superquants" % "0.9"
 ```
 
+
 # Features
 
 - Intellij Idea compatible 100%. Red marks free.
