@@ -40,7 +40,7 @@ libraryDependencies += "org.rudogma" %%% "superquants" % "0.9"
     - There is no boxing, so they are much faster then AnyVal, but there is some boilerplate-bytecode, so they are slower then raw primitives without tags. This boilerplate can be removed with micro-scalac-plugin and then there will be no difference between this library and raw primitives.
     - Long precision ( ~10x slower on big formulas, than primitive Long)(Slower then Double precision, because additional convertions Double -> Long applied)
     - Double precision( ~2-4x slower on big formulas, than primitive Double)( But! It is 7-10x FASTER then based on AnyVal: [https://github.com/typelevel/squants](https://github.com/typelevel/squants) and still has no garbage for GC)
-- Define your own unit(or extend predefined) in a few lines and automatically get supported all physical rules (see predefined units in sources. For example: shared/src/main/scala/superquants/longprecision/time/package.scala)
+- Define your own unit(or extend predefined) in a few lines and automatically get supported all physical rules (see predefined units in sources. For example: [Length1](https://github.com/Rudogma/scala-superquants/blob/master/shared/src/main/scala/superquants/longprecision/length/package.scala) + [Length2](https://github.com/Rudogma/scala-superquants/blob/master/shared/src/main/scala/superquants/traits/LengthTrait.scala)
     
     
 # Roadmap
